@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:padding="10dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_name"
+            android:textColor="@android:color/black"
+            android:id="@+id/detail_tvUserName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" android:textSize="20dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_tvLogout"
+            android:id="@+id/detail_tvLogout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:autoText="true"
+            android:textStyle="italic"
+            android:textColor="@android:color/holo_red_dark"/>
+    <ImageView
+            android:layout_width="105dp"
+            android:layout_height="90dp"
+            android:id="@+id/detail_ivAvatar"
+            android:background="@drawable/troll"
+            android:layout_alignParentLeft="@+id/detail_tvUserName"
+            android:layout_below="@+id/detail_tvUserName" android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"/>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_toRightOf="@+id/detail_ivAvatar"
+            android:layout_alignTop="@+id/detail_ivAvatar"
+            android:layout_alignBottom="@+id/detail_ivAvatar"
+            >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_tvAddress"
+                android:id="@+id/detail_tvFieldAddress"
+                android:paddingRight="20dp"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_tvBirthDay"
+                android:id="@+id/detail_tvFieldBirthDay"
+                android:layout_below="@+id/detail_tvFieldAddress"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_tvOnline"
+                android:id="@+id/detail_tvFieldOnline"
+                android:layout_below="@+id/detail_tvFieldBirthDay"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_tvGender"
+                android:id="@+id/detail_tvFieldGender"
+                android:layout_alignLeft="@+id/detail_tvFieldAddress" android:layout_below="@+id/detail_tvFieldOnline"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_tvAddress" android:layout_toRightOf="@+id/detail_tvFieldAddress"
+                android:layout_below="@+id/detail_tvUserName"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_tvBirthDay" android:layout_toRightOf="@+id/detail_tvFieldAddress"
+                android:layout_below="@+id/detail_tvFieldAddress"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_tvOnline" android:layout_toRightOf="@+id/detail_tvFieldAddress"
+                android:layout_below="@+id/detail_tvFieldBirthDay"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_tvGender" android:layout_toRightOf="@+id/detail_tvFieldAddress"
+                android:layout_below="@+id/detail_tvFieldOnline"/>
+    </RelativeLayout>
+    <RadioGroup
+            android:id="@+id/detail_rgGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/detail_ivAvatar"
+            android:layout_below="@+id/detail_ivAvatar"
+            android:visibility="gone">
+        <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_rbGenderMale"
+                android:id="@+id/detail_rbMale" android:layout_toRightOf="@+id/detail_ivAvatar"
+                android:layout_below="@+id/detail_ivAvatar" android:checked="false"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_rbGenderFemale" android:id="@+id/detail_rbFemale"
+                android:layout_toRightOf="@+id/detail_ivAvatar"
+                android:layout_below="@+id/radioButton" android:checked="false" android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+    </RadioGroup>
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_tvShowFriendList"
+            android:textColor="@android:color/black"
+            android:id="@+id/detail_cbShowListContact" android:layout_alignLeft="@+id/detail_tvUserName"
+            android:layout_below="@+id/detail_rgGender" android:checked="false"/>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/detail_cbShowListContact"
+            android:id="@+id/detail_rlContactList"
+            android:visibility="gone">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_tvName1"
+                android:id="@+id/detail_tvName1" android:layout_alignLeft="@+id/detail_tvUserName"
+                android:layout_below="@+id/detail_cbShowListContact"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_tvPhone1"
+                android:id="@+id/detail_tvPhone1" android:layout_alignLeft="@+id/detail_tvUserName"
+                android:layout_below="@+id/detail_tvName1"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black"
+                android:id="@+id/detail_tvLine1" android:layout_alignLeft="@+id/detail_tvUserName"
+                android:layout_below="@+id/detail_tvPhone1"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_tvName2"
+                android:id="@+id/detail_tvName2" android:layout_alignLeft="@+id/detail_tvUserName"
+                android:layout_below="@+id/detail_tvLine1"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_tvPhone2"
+                android:id="@+id/detail_tvPhone2" android:layout_alignLeft="@+id/detail_tvUserName"
+                android:layout_below="@+id/detail_tvName2"/>
+    </RelativeLayout>
+</RelativeLayout>

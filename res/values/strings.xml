@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidBasicUI</string>
+    <string name="user_name">Username :</string>
+    <string name="password">Password :</string>
+    <string name="login_btLogin">Login</string>
+    <string name="account_name">Hi ! Android</string>
+    <string name="detail_tvLogout"><u>Logout</u></string>
+    <string name="detail_tvAddress">Address:</string>
+    <string name="detail_tvBirthDay">BirthDay:</string>
+    <string name="detail_tvOnline">Online:</string>
+    <string name="detail_tvGender">Gender:</string>
+    <string name="detail_tvShowFriendList">   Show Friend List</string>
+    <string name="detail_tvName1">Name: Perter</string>
+    <string name="detail_tvPhone1">Phone: 090102012</string>
+    <string name="detail_tvName2">Name: Jonson Baby</string>
+    <string name="detail_tvPhone2">Phone: 09020102</string>
+    <string name="detail_tvName3">Name: Lucky bOy</string>
+    <string name="detail_tvPhone3">Phone: 09203497</string>
+    <string name="detail_rbGenderMale">Male</string>
+    <string name="detail_rbGenderFemale">Female</string>
+</resources>
