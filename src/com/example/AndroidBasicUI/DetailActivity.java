@@ -192,7 +192,7 @@ public class DetailActivity extends Activity
                     mHour = selectedHour;
                     mMinute = selectedMinute;
                     ViewGroup vg = (ViewGroup) view.getChildAt(0);
-                    String setTime = ((Button) vg.getChildAt(2)).getText().toString();
+                    String setTime = ((Button) vg.getChildAt(1)).getText().toString();
                     detail_tvOnline.setText(new StringBuilder().append(pad(mHour))
                             .append(":").append(pad(mMinute)).append(setTime));
 
